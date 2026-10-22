@@ -1,0 +1,50 @@
+{
+  "source": "Kaggle Mobile Games: A/B Testing / DataCamp Cookie Cats",
+  "players": 90189,
+  "groups": {
+    "gate_30": {
+      "players": 44700,
+      "d1_retained": 20034,
+      "d1_rate": 0.4481879194630872,
+      "d7_retained": 8502,
+      "d7_rate": 0.19020134228187918,
+      "rounds_median": 17.0,
+      "rounds_mean": 52.45626398210291
+    },
+    "gate_40": {
+      "players": 45489,
+      "d1_retained": 20119,
+      "d1_rate": 0.44228274967574577,
+      "d7_retained": 8279,
+      "d7_rate": 0.18200004396667327,
+      "rounds_median": 16.0,
+      "rounds_mean": 51.29877552814966
+    }
+  },
+  "effects": {
+    "d1": {
+      "rate_difference_pp": -0.5905169787341458,
+      "z_p_value": 0.07440965529691913,
+      "difference_95ci_pp": [
+        -1.2392558656738064,
+        0.058221908205514844
+      ]
+    },
+    "d7": {
+      "rate_difference_pp": -0.8201298315205913,
+      "z_p_value": 0.001554249975614329,
+      "difference_95ci_pp": [
+        -1.328164577146224,
+        -0.3120950858949586
+      ]
+    }
+  },
+  "srm": {
+    "expected_ratio": "50:50",
+    "chi_square": 6.9024049496058275,
+    "p_value": 0.008607987810836262,
+    "flag_at_0_05": true
+  },
+  "rounds_outliers_over_10000": 1,
+  "decision_note": "仅在原实验预期为 1:1 分配时，分流检验才可用于判断异常；应核查实际分配方案和采集过程，再作上线因果决策。"
+}
